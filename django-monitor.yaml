@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: ticketbench-monitor
+  labels:
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app: ticketbench # 내 장고 서비스의 라벨
+  endpoints:
+  - port: http
+    path: /metrics
+    interval: 5s

@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ticketbench-deploy
+spec:
+  replicas: 1 # 처음에는 1대의 서버(파드)로 시작
+  selector:
+    matchLabels:
+      app: ticketbench
+  template:
+    metadata:
+      labels:
+        app: ticketbench
+    spec:
+      containers:
+      - name: ticketbench
+        image: f3zlov/ticketbench:v5
+        ports:
+        - containerPort: 8000
+        resources:
+          # 의도적으로 CPU 자원을 적게
+          requests:
+            cpu: "100m" 
+            memory: "128Mi"
+          limits:
+            cpu: "200m"
+            memory: "256Mi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ticketbench-svc
+spec:
+  type: LoadBalancer # DigitalOcean에 외부 인터넷 접속용 공인 IP를 요청
+  selector:
+    app: ticketbench
+  ports:
+  - port: 80
+    targetPort: 8000

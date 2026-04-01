@@ -1,0 +1,40 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: ticketbench-ai-scaler
+spec:
+  scaleTargetRef:
+    name: ticketbench-deploy
+  minReplicaCount: 1
+  maxReplicaCount: 25
+  
+  pollingInterval: 5
+  cooldownPeriod: 10
+
+  advanced:
+    horizontalPodAutoscalerConfig:
+      behavior:
+        scaleUp:
+          stabilizationWindowSeconds: 0
+          policies:
+          - type: Pods
+            value: 40  
+            periodSeconds: 5
+          - type: Percent
+            value: 900 
+            periodSeconds: 5
+          selectPolicy: Max
+        scaleDown:
+          stabilizationWindowSeconds: 10
+          policies:
+          - type: Percent
+            value: 100 
+            periodSeconds: 15
+  
+  triggers:
+  - type: metrics-api
+    metadata:
+      targetValue: "1"
+      url: "https://fumiko-subcorneous-katherine.ngrok-free.dev/api/v1/predict/ensemble"
+      valueLocation: "predicted_replicas"
+      timeout: "5000"
