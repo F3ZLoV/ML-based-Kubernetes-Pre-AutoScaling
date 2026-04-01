@@ -1,10 +1,35 @@
+# Python
 __pycache__/
 *.pyc
-.env
-.DS_Store
-*.npy
-*.csv
 venv/
+.env
+
+# ML artifacts (model/ 디렉토리 안에 생성됨)
 *.keras
-*.npy
 *.pkl
+*.npy
+*.h5
+
+# Data
+*.csv
+!results/.gitkeep
+
+# Node (혹시 남아있을 경우)
+node_modules/
+package.json
+package-lock.json
+
+# OS
+.DS_Store
+
+# Kubernetes secrets (절대 커밋 금지)
+kubeconfig.yaml
+**/kubeconfig*.yaml
+
+# Locust reports
+*.html
+
+# IDE
+.vscode/
+.idea/
+```
