@@ -35,6 +35,6 @@ spec:
   - type: metrics-api
     metadata:
       targetValue: "1"
-      url: "https://fumiko-subcorneous-katherine.ngrok-free.dev/api/v1/predict/ensemble"
+      url: "https://fumiko-subcorneous-katherine.ngrok-free.dev/api/v1/predict"
       valueLocation: "predicted_replicas"
       timeout: "5000"
