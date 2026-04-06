@@ -16,25 +16,24 @@ class SoftLandingTicketDropShape(LoadTestShape):
     """
     
     stages = [
-        # 1. 예열 및 대기 (0~30초)
+        # 예열 및 대기
         {"duration": 30, "users": 50, "spawn_rate": 10},
         
-        # 2. 전조 증상 시작 (30~75초)
+        # 전조 증상 시작
         {"duration": 75, "users": 150, "spawn_rate": 20},
-        
-        # 3. 폭풍 전야 (75~135초)
+
         {"duration": 135, "users": 350, "spawn_rate": 50},
         
-        # 4. 티켓 오픈! 피크타임 (135~255초) - 2분간 폭주 유지
+        # 2분간 폭주 유지
         {"duration": 255, "users": 600, "spawn_rate": 100},
         
-        # 5. [핵심] 1차 썰물 (255~315초): 매진 공지 확인 후 절반 이탈
+        # 1차 썰물: 매진 공지 확인 후 절반 이탈
         {"duration": 315, "users": 300, "spawn_rate": 30},
         
-        # 6. [핵심] 2차 썰물 (315~375초): 미련이 남은 유저들 서서히 이탈
+        # 2차 썰물: 남은 유저들 서서히 이탈
         {"duration": 375, "users": 100, "spawn_rate": 20},
         
-        # 7. 이벤트 완전 종료 (375초 이후)
+        # 이벤트 완전 종료
         {"duration": 435, "users": 10, "spawn_rate": 10},
     ]
 

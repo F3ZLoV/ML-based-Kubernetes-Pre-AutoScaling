@@ -72,6 +72,21 @@ try:
             print(f"✅ [Ready] {ready}개 도달 ({lead_time:.2f}s)")
             scaling_in_progress = False
 
+        elif scaling_in_progress and desired < last_desired:
+            # 목표치가 하향 조정됨 → 현재 ready 기준으로 완료 처리
+            lead_time = time.time() - scale_start_time
+            scale_out_times.append(lead_time)
+            
+            with open(OUTPUT_FILE, 'a', newline='') as f:
+                writer = csv.writer(f)
+                writer.writerow([
+                    datetime.now().isoformat(), MODEL_NAME, SCENARIO_NAME, RUN_NUMBER,
+                    'scale_out_partial', from_replicas, ready, f"{lead_time:.3f}"
+                ])
+            
+            print(f"⚠️ [목표 변경] {ready}개에서 목표 재조정 ({lead_time:.2f}s)")
+            scaling_in_progress = False
+
         elif desired < last_desired:
             with open(OUTPUT_FILE, 'a', newline='') as f:
                 writer = csv.writer(f)
