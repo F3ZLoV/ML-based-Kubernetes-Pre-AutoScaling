@@ -33,3 +33,12 @@ kubeconfig.yaml
 .vscode/
 .idea/
 ```
+# .gitignore 에 추가
+logs/
+*.zip
+results/run-zip-files/
+model/test.java
+
+# 모델 파일 정책 결정 필요 (아래 참고)
+# *.keras
+# *.pkl
