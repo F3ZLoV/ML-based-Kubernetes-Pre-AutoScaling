@@ -1,0 +1,9 @@
+timestamp,model,scenario,run,event_type,from_replicas,to_replicas,lead_time_sec
+2026-04-23T19:00:47.356435,hpa,ramp,2,scale_out,2,6,1.964
+2026-04-23T19:01:01.680569,hpa,ramp,2,scale_out,6,8,1.995
+2026-04-23T19:01:17.510382,hpa,ramp,2,scale_out,8,10,1.969
+2026-04-23T19:01:31.862006,hpa,ramp,2,scale_out,10,12,1.996
+2026-04-23T19:01:47.418023,hpa,ramp,2,scale_out,12,15,1.968
+2026-04-23T19:02:06.214271,hpa,ramp,2,scale_out,15,20,6.524
+2026-04-23T19:02:18.048152,hpa,ramp,2,scale_out,20,24,3.936
+2026-04-23T19:02:31.844771,hpa,ramp,2,scale_out,24,25,2.001

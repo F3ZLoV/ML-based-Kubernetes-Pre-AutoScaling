@@ -1,0 +1,11 @@
+timestamp,model,scenario,run,event_type,from_replicas,to_replicas,lead_time_sec
+2026-04-17T02:07:46.550727,hpa,wiki,3,scale_out,2,7,1.977
+2026-04-17T02:08:11.693675,hpa,wiki,3,scale_out,7,9,0.827
+2026-04-17T02:09:41.926466,hpa,wiki,3,scale_down,9,6,0
+2026-04-17T02:09:55.854679,hpa,wiki,3,scale_down,6,5,0
+2026-04-17T02:10:12.193754,hpa,wiki,3,scale_down,5,4,0
+2026-04-17T02:10:42.810037,hpa,wiki,3,scale_out,4,8,1.008
+2026-04-17T02:10:59.593406,hpa,wiki,3,scale_out,8,12,3.187
+2026-04-17T02:11:29.680046,hpa,wiki,3,scale_out,12,16,3.217
+2026-04-17T02:12:00.448328,hpa,wiki,3,scale_out,16,24,5.032
+2026-04-17T02:12:28.762164,hpa,wiki,3,scale_out,24,25,3.347

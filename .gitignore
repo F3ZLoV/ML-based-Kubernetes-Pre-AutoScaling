@@ -4,41 +4,39 @@ __pycache__/
 venv/
 .env
 
-# ML artifacts (model/ 디렉토리 안에 생성됨)
+# ML artifacts
 *.keras
-*.pkl
-*.npy
 *.h5
+*.npy
+*.pkl
+!server/models/aws_kaggle_scaler.pkl
 
-# Data
+# Raw experiment output (large / superseded).
+# The 84 runs reported in the paper live in results/paper_dataset/ and are tracked.
 *.csv
 !results/.gitkeep
-
-# Node (혹시 남아있을 경우)
-node_modules/
-package.json
-package-lock.json
-
-# OS
-.DS_Store
+!results/paper_dataset/**
+logs/
+*.zip
+results/run-zip-files/
+results/backup_2node/
 
 # Kubernetes secrets (절대 커밋 금지)
 kubeconfig.yaml
 **/kubeconfig*.yaml
 
-# Locust reports
+# Locust HTML reports
 *.html
 
-# IDE
-.vscode/
-.idea/
-```
-# .gitignore 에 추가
-logs/
-*.zip
-results/run-zip-files/
+# Scratch
 model/test.java
 
-# 모델 파일 정책 결정 필요 (아래 참고)
-# *.keras
-# *.pkl
+# Node
+node_modules/
+package.json
+package-lock.json
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/

@@ -33,15 +33,21 @@ case "${MODE}" in
     echo "    → HPA baseline 활성화 완료"
     ;;
   ml)
-    # AI 추론 서버(ngrok) 살아있는지 간단 체크
-    URL=$(grep -oP '(?<=url: ")[^"]+' infra/keda-scaler.yaml | head -1)
-    if [ -n "$URL" ]; then
-      echo "    → AI 추론 서버 health check: ${URL}"
-      if ! curl -s -o /dev/null -w "%{http_code}" "${URL}" | grep -qE '^(200|404|405)$'; then
-        echo "    [WARN] AI 추론 서버 응답 없음 — uvicorn 실행 확인 필요"
-      fi
+    if [ -z "${AI_SERVER_URL}" ]; then
+      echo "    [ERROR] AI_SERVER_URL 이 설정되지 않았습니다."
+      echo "            export AI_SERVER_URL=https://<your-ngrok-subdomain>.ngrok-free.dev"
+      exit 1
     fi
-    kubectl apply -f infra/keda-scaler.yaml
+    URL="${AI_SERVER_URL%/}/api/v1/predict"
+
+    # AI 추론 서버(ngrok) 살아있는지 간단 체크
+    echo "    → AI 추론 서버 health check: ${URL}"
+    if ! curl -s -o /dev/null -w "%{http_code}" "${URL}" | grep -qE '^(200|404|405)$'; then
+      echo "    [WARN] AI 추론 서버 응답 없음 — uvicorn 실행 확인 필요"
+    fi
+
+    # 템플릿의 자리표시자를 실제 URL로 치환해 적용
+    sed "s#AI_SERVER_URL_PLACEHOLDER#${AI_SERVER_URL%/}#" infra/keda-scaler.yaml       | kubectl apply -f -
     echo "    → KEDA ScaledObject(AI) 활성화 완료"
     ;;
   cleanup)

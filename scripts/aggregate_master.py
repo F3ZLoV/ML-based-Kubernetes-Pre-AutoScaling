@@ -25,13 +25,30 @@ OUT_PPT_CSV = "results/ppt_summary.csv"
 # -----------------------------------------------------------------------------
 # 1) Lead-time 수집
 # -----------------------------------------------------------------------------
+def infer_dataset(path):
+    """학습 데이터셋 판정.
+
+    AWS spike와 Alibaba spike는 파일명이 동일하므로(lead_time_gru_spike_run1.csv)
+    반드시 경로로 구분해야 한다. 이전 구현은 os.path.basename 으로 자른 문자열에서
+    "Aws-dataset" 을 찾아 절대 매칭되지 않았고, 두 실험군이 한 그룹으로 합쳐졌다.
+    """
+    p = path.replace(os.sep, "/")
+    if "Aws-dataset" in p or "/aws" in p.lower():
+        return "AWS"
+    return "Alibaba"
+
+
 def load_lead_times():
     files = glob.glob(f"{RESULTS_ROOT}/**/lead_time_*.csv", recursive=True)
+    files = [f for f in files if "backup_2node" not in f.replace(os.sep, "/")]
     dfs = []
     for f in files:
         try:
             df = pd.read_csv(f)
             df["__source"] = os.path.basename(f)
+            # 데이터셋 판정은 파일명이 아니라 경로(상위 디렉터리)로 해야 한다.
+            # AWS spike와 Alibaba spike는 basename이 완전히 동일하기 때문이다.
+            df["__path"] = f.replace(os.sep, "/")
             dfs.append(df)
         except Exception as e:
             print(f"  [skip] {f}: {e}")
@@ -44,15 +61,7 @@ def load_lead_times():
     #   - AWS 시나리오는 파일명이 lead_time_<model>_spike_run<n>.csv (AWS 전용 폴더에만 존재)
     #   - Alibaba 시나리오는 동일 포맷이지만 scenario ∈ {spike, periodic, wiki}
     #   - 8주차 신규 시나리오는 scenario ∈ {general_spike, step, ramp}
-    def infer_dataset(row):
-        src = row["__source"]
-        if "Aws-dataset" in src or "aws" in src.lower():
-            return "AWS"
-        if row["scenario"] in {"general_spike", "step", "ramp"}:
-            return "Alibaba"   # 8주차 신규도 Alibaba로 학습한 모델 사용
-        return "Alibaba"
-
-    all_df["dataset"] = all_df.apply(infer_dataset, axis=1)
+    all_df["dataset"] = all_df["__path"].map(infer_dataset)
     return all_df
 
 
@@ -61,6 +70,7 @@ def load_lead_times():
 # -----------------------------------------------------------------------------
 def load_locust_stats():
     files = glob.glob(f"{RESULTS_ROOT}/**/*_stats.csv", recursive=True)
+    files = [f for f in files if "backup_2node" not in f.replace(os.sep, "/")]
     rows = []
     for f in files:
         fname = os.path.basename(f)
@@ -84,6 +94,7 @@ def load_locust_stats():
             total = float(r.get("Request Count", 0) or 0)
             fails = float(r.get("Failure Count", 0) or 0)
             rows.append({
+                "dataset": infer_dataset(f),
                 "model": model,
                 "scenario": scenario,
                 "run": run,
@@ -116,6 +127,7 @@ def build_summary(lead_df, stats_df):
         ["dataset", "scenario", "model", "run"]
     )["lead_time_sec"].agg(
         events="count",
+        lead_sum="sum",
         lead_mean="mean",
         lead_std="std",
         lead_median="median",
@@ -123,23 +135,28 @@ def build_summary(lead_df, stats_df):
     ).reset_index()
 
     merged = lead_run.merge(
-        stats_df[["model","scenario","run","total_req","fail","err_rate_%",
+        stats_df[["dataset","model","scenario","run","total_req","fail","err_rate_%",
                   "p95_ms","p99_ms","rps"]],
-        on=["model","scenario","run"], how="left"
+        on=["dataset","model","scenario","run"], how="left"
     )
 
     # scenario-model 단위 평균 (논문의 main table)
     agg = merged.groupby(["dataset","scenario","model"]).agg(
         n_runs=("run", "nunique"),
         n_events=("events", "sum"),
-        lead_mean_s=("lead_mean", "mean"),
+        # Table 4는 3개 run의 모든 scale-out 이벤트를 합친 pooled mean이다.
+        # run 평균의 평균(mean-of-means)으로 계산하면 값이 달라진다.
+        lead_mean_s=("lead_sum", "sum"),
         lead_std_s=("lead_mean", "std"),       # run 간 변동
         lead_pooled_std=("lead_std", "mean"),  # run 내 변동 평균
         p95_mean_ms=("p95_ms", "mean"),
         p99_mean_ms=("p99_ms", "mean"),
         err_mean_pct=("err_rate_%", "mean"),
         req_total=("total_req", "sum"),
-    ).round(3).reset_index()
+    ).reset_index()
+    # pooled mean = 이벤트 합 / 이벤트 수
+    agg["lead_mean_s"] = agg["lead_mean_s"] / agg["n_events"]
+    agg = agg.round(3)
     return merged, agg
 
 

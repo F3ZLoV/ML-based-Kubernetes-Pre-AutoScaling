@@ -15,12 +15,16 @@ General Spike Scenario — AAPA 'SPIKE' archetype mapping
 
 총 길이: 320s (≈5.3분)
 """
+import os
+
 from locust import HttpUser, task, between, LoadTestShape
 
 
 class TicketBenchUser(HttpUser):
-    host = "http://129.212.216.217"
-    host = "http://129.212.216.217"
+    # Cluster LoadBalancer endpoint. Override per environment:
+    #   export TARGET_HOST=http://<cluster-lb-ip>
+    # (locust --host=... still takes precedence over this default.)
+    host = os.getenv("TARGET_HOST", "http://localhost:8000")
     wait_time = between(0.1, 0.5)
 
     @task

@@ -1,0 +1,12 @@
+timestamp,model,scenario,run,event_type,from_replicas,to_replicas,lead_time_sec
+2026-04-08T19:08:11.024649,hpa,spike,1,scale_out,2,5,1.699
+2026-04-08T19:08:26.929681,hpa,spike,1,scale_out,5,6,3.531
+2026-04-08T19:08:41.106232,hpa,spike,1,scale_out,6,11,1.742
+2026-04-08T19:09:11.336672,hpa,spike,1,scale_out,11,14,1.852
+2026-04-08T19:09:27.966144,hpa,spike,1,scale_out,14,23,3.538
+2026-04-08T19:09:42.108094,hpa,spike,1,scale_out,23,25,2.073
+2026-04-08T19:13:24.599160,hpa,spike,1,scale_down,25,22,0
+2026-04-08T19:13:41.738976,hpa,spike,1,scale_down,22,11,0
+2026-04-08T19:13:55.838505,hpa,spike,1,scale_down,11,6,0
+2026-04-08T19:14:25.815479,hpa,spike,1,scale_down,6,4,0
+2026-04-08T19:14:41.765872,hpa,spike,1,scale_down,4,2,0

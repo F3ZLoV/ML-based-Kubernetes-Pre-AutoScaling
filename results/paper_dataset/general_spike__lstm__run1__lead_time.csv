@@ -1,0 +1,10 @@
+timestamp,model,scenario,run,event_type,from_replicas,to_replicas,lead_time_sec
+2026-04-23T13:17:42.992476,lstm,general_spike,1,scale_out,2,3,2.039
+2026-04-23T13:17:56.057533,lstm,general_spike,1,scale_down,3,1,0
+2026-04-23T13:18:14.468286,lstm,general_spike,1,scale_out,1,2,2.155
+2026-04-23T13:18:25.661449,lstm,general_spike,1,scale_down,2,1,0
+2026-04-23T13:18:46.550651,lstm,general_spike,1,scale_out,1,13,4.056
+2026-04-23T13:18:59.685486,lstm,general_spike,1,scale_out,13,25,4.074
+2026-04-23T13:21:57.462181,lstm,general_spike,1,scale_down,25,3,0
+2026-04-23T13:22:18.227623,lstm,general_spike,1,scale_out,3,25,6.107
+2026-04-23T13:22:28.183895,lstm,general_spike,1,scale_down,25,1,0

@@ -35,6 +35,8 @@ spec:
   - type: metrics-api
     metadata:
       targetValue: "1"
-      url: "https://fumiko-subcorneous-katherine.ngrok-free.dev/api/v1/predict"
+      # Rendered by scripts/switch_scaler.sh from the AI_SERVER_URL env var, e.g.
+      #   export AI_SERVER_URL=https://<your-ngrok-subdomain>.ngrok-free.dev
+      url: "AI_SERVER_URL_PLACEHOLDER/api/v1/predict"
       valueLocation: "predicted_replicas"
       timeout: "5000"

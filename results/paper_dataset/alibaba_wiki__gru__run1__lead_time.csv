@@ -1,0 +1,14 @@
+timestamp,model,scenario,run,event_type,from_replicas,to_replicas,lead_time_sec
+2026-04-17T01:11:29.840862,gru,wiki,1,scale_out,2,14,4.862
+2026-04-17T01:11:46.069718,gru,wiki,1,scale_out,14,25,3.277
+2026-04-17T01:13:13.712420,gru,wiki,1,scale_down,25,21,0
+2026-04-17T01:13:26.605277,gru,wiki,1,scale_down,21,15,0
+2026-04-17T01:13:44.192234,gru,wiki,1,scale_down,15,10,0
+2026-04-17T01:13:57.679093,gru,wiki,1,scale_down,10,3,0
+2026-04-17T01:14:17.453005,gru,wiki,1,scale_out,3,9,3.201
+2026-04-17T01:14:29.701361,gru,wiki,1,scale_out,9,11,1.662
+2026-04-17T01:14:45.030899,gru,wiki,1,scale_out,11,13,0.712
+2026-04-17T01:15:01.356306,gru,wiki,1,scale_out,13,16,3.338
+2026-04-17T01:15:32.436169,gru,wiki,1,scale_out,16,19,3.413
+2026-04-17T01:16:04.461155,gru,wiki,1,scale_out,19,25,4.895
+2026-04-17T01:20:49.488440,gru,wiki,1,scale_down,25,2,0

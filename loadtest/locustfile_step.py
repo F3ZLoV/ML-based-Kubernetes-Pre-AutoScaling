@@ -21,12 +21,16 @@ Step Scenario — AAPA 'STATIONARY (level-shift)' archetype mapping
   각 stage 경계에서 spawn_rate=30으로 빠르게 전이(약 5초 내 완료)
   전이 이후는 level 유지 → 안정 상태에서의 스케일링 안정성 비교
 """
+import os
+
 from locust import HttpUser, task, between, LoadTestShape
 
 
 class TicketBenchUser(HttpUser):
-    host = "http://129.212.216.217"
-    host = "http://129.212.216.217"
+    # Cluster LoadBalancer endpoint. Override per environment:
+    #   export TARGET_HOST=http://<cluster-lb-ip>
+    # (locust --host=... still takes precedence over this default.)
+    host = os.getenv("TARGET_HOST", "http://localhost:8000")
     wait_time = between(0.1, 0.5)
 
     @task
