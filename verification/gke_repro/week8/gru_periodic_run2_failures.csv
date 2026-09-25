@@ -1,0 +1,13 @@
+Method,Name,Error,Occurrences
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x75410851f950>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1
+GET,/,RemoteDisconnected('Remote end closed connection without response'),1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x7540eb7d7350>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1
+GET,/,"ConnectionRefusedError(111, 'Connection refused')",262
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x7540ebc1c8c0>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1
+GET,/,"ConnectionResetError(104, 'Connection reset by peer')",2
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x7540ebe43aa0>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x7541086bd070>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x754108402360>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x7541198968a0>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x7541198977a0>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x75411991bbf0>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1

@@ -1,0 +1,8 @@
+Method,Name,Error,Occurrences
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x7957f1db2d20>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x7957f1470d40>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1
+GET,/,RemoteDisconnected('Remote end closed connection without response'),3
+GET,/,"ConnectionRefusedError(111, 'Connection refused')",208
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x7957f1d54830>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x7957f0cf9490>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.50.49.46', port=80) at 0x7957f12bd280>, 'Connection to 34.50.49.46 timed out. (connect timeout=None)')",1
