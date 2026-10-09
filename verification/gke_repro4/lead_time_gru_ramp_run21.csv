@@ -1,0 +1,7 @@
+timestamp,model,scenario,run,event_type,from_replicas,to_replicas,lead_time_sec
+2026-10-10T01:07:59.329194,gru,ramp,21,scale_out,2,7,2.668
+2026-10-10T01:08:13.979018,gru,ramp,21,scale_out,7,8,1.993
+2026-10-10T01:08:29.415529,gru,ramp,21,scale_out,8,12,2.022
+2026-10-10T01:08:44.945460,gru,ramp,21,scale_out,12,18,2.778
+2026-10-10T01:08:59.781655,gru,ramp,21,scale_out,18,24,2.045
+2026-10-10T01:15:31.783770,gru,ramp,21,scale_down,24,16,0

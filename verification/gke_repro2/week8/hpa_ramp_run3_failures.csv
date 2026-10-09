@@ -1,0 +1,4 @@
+Method,Name,Error,Occurrences
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.64.78.106', port=80) at 0x75fe11ce76b0>, 'Connection to 34.64.78.106 timed out. (connect timeout=None)')",1
+GET,/,"ConnectionRefusedError(111, 'Connection refused')",13
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='34.64.78.106', port=80) at 0x75fe0b6e9af0>, 'Connection to 34.64.78.106 timed out. (connect timeout=None)')",1
