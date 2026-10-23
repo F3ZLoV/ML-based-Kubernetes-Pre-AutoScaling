@@ -1,8 +1,8 @@
 # 논문 역검증 보고서
 
 **대상 논문**: Evaluating Predictive Autoscaling Models Across Kubernetes Traffic Archetypes (JKSCI 투고본, 12쪽, 표 9개·그림 4개)
-**검증 일시**: 2026-09-25 ~ 26 (1차), 2026-10-09 ~ 10 (후속 재실험 2~4차)
-**검증 범위**: (1) 논문 수치 ↔ 원시 데이터 (2) 논문 서술 ↔ 코드·설정 (3) 다른 클라우드(GCP GKE)에서의 축소 재실험 (4) 리드 타임 불일치 원인 확인용 후속 재실험
+**검증 일시**: 2026-09-25 ~ 26 (1차), 2026-10-09 ~ 10 (후속 재실험 2~4차), 2026-10-12 ~ 13 (확장 실험)
+**검증 범위**: (1) 논문 수치 ↔ 원시 데이터 (2) 논문 서술 ↔ 코드·설정 (3) 다른 클라우드(GCP GKE)에서의 축소 재실험 (4) 리드 타임 불일치 원인 확인용 후속 재실험 (5) 통제된 3개 시나리오 × 4개 스케일러 확장 실험
 
 ---
 
@@ -17,6 +17,9 @@
 | GKE 재실험 — ramp에서 GRU의 P99 개선 | **재현** (21~26% 낮음, 논문 21.8%) |
 | GKE 재실험 — ramp에서 GRU의 리드 타임 우위 (+15.1%) | **재현되지 않음** (1차 GKE에서는 GRU가 0.55초 느림) — 원인 분석은 3.5절 |
 | 후속 재실험 2~4차 — 1차의 "GRU 0.55초 느림" | **다시 나오지 않음** (HPA 2.08초 vs GRU 2.21초, 1차 절차를 그대로 재현해도 +0.10초) — 4장 |
+| 확장 실험 — general spike에서 GRU의 P95 개선 | **재현** (748 → 253 ms, −66%, p < 0.001) — 5장 |
+| 확장 실험 — GRU가 HPA보다 먼저 확장 시작 | **재현** (세 시나리오 모두 16~25초 먼저, p ≤ 0.003) — 5장 |
+| 확장 실험 — 같은 안전 장치에서 LSTM·Ensemble의 이득 | **없음** (세 시나리오 모두 P95가 HPA보다 나쁨, p ≤ 0.005) — 5장 |
 
 논문에 **틀린 수치나 코드와 어긋나는 서술은 없었습니다.** 재실험에서 논문의 경향 중 Ensemble 진동과 GRU의 꼬리 지연 개선은 다른 클라우드에서도 재현되었고, ramp의 리드 타임 우위는 환경에 따라 달라지는 것으로 나타났습니다. 1차 재실험에서 GRU가 느렸던 결과는 후속 재실험 세 번에서 다시 나오지 않았으며, 큰 원인 하나가 아니라 배치 크기 차이(약 0.34초), 시작 직후 replica 출렁임(약 0.1초), run 간 흔들림이 겹친 결과로 설명됩니다(4장).
 
@@ -212,7 +215,42 @@ GRU의 꼬리 지연 개선은 2~4차 합산에서도 유지되지만, 4차처�
 
 ---
 
-## 5. 재현 방법
+## 5. 확장 실험 — 통제된 3개 시나리오 × 4개 스케일러
+
+논문에서 유형별 비교의 근거인 통제된 3개 시나리오(general spike, step, ramp)를 GKE에서 스케일러마다 6회(run 101~106) 실행했습니다. 1단계(10/12)는 HPA·GRU를, 2단계(10/13)는 LSTM·Ensemble을 실행했고, 단계마다 새 클러스터(e2-standard-2 × 3, 서울)를 만들어 끝나면 삭제했습니다. 라운드마다 시나리오를 돌아가며 두 스케일러를 교대로 실행하고, ML 실행 직전마다 추론 서버를 해당 모델로 재시작했습니다.
+
+판정은 run 단위 값의 Welch t-검정(양측)입니다. **확장 시작**은 부하 시작(사용자 수 > 0)부터 3 replica 이상으로 처음 늘린 이벤트의 시작까지 걸린 시간으로, 같은 계산을 논문 데이터에 적용하면 논문 Table 6의 Scale-out Onset 값(40.7 / 3.9초 등)이 그대로 나옵니다.
+
+### 5.1 결과 (각 6 run 평균)
+
+| 시나리오 | 지표 | HPA | LSTM | GRU | Ensemble |
+|---|---|---|---|---|---|
+| general spike | P95 (ms) | 748 | 2,783 ▲ | **253** ▼ | 957 ▲ |
+| | 확장 시작 (s) | 32.0 | 63.7 ▲ | **7.2** ▼ | 22.1 ▼ |
+| | 리드 타임 (s) | 2.16 | 5.06 ▲ | 2.65 | 3.17 ▲ |
+| step | P95 (ms) | 142 | 430 ▲ | 122 | 357 ▲ |
+| | 확장 시작 (s) | 31.7 | 24.2 ▼ | **7.5** ▼ | 19.9 ▼ |
+| | 리드 타임 (s) | 1.96 | 2.81 ▲ | 2.48 ▲ | 2.94 ▲ |
+| ramp | P95 (ms) | 180 | 527 ▲ | 172 | 313 ▲ |
+| | 확장 시작 (s) | 38.2 | 38.1 | **22.1** ▼ | 27.8 ▼ |
+| | 리드 타임 (s) | 1.86 | 2.36 ▲ | 2.09 | 2.51 ▲ |
+
+(▲/▼ = HPA보다 의미 있게 큼/작음, p < 0.05. P99·에러율·Aggressiveness와 모든 p값은 `analyze_ext2_output.txt`)
+
+- **GRU만 HPA보다 나았습니다.** general spike에서 P95 −66%(p < 0.001), P99 830 → 343 ms(p < 0.001). step·ramp에서는 HPA도 응답이 빨라 GRU와 차이가 없었습니다(p = 0.18, 0.81).
+- **LSTM·Ensemble은 세 시나리오 모두 P95·P99가 HPA보다 나빴습니다**(P95 p ≤ 0.005). 논문(DOKS)에서 LSTM이 HPA보다 나쁘고 Ensemble이 HPA와 차이가 없었던 것과 방향이 같고, GKE에서 더 뚜렷합니다.
+- **일찍 시작한다고 이득이 생기지는 않습니다.** Ensemble은 HPA보다 10~12초 먼저 확장을 시작했지만 이벤트당 HPA의 2~4배(5.6~12.1개)를 늘리며 응답이 더 나빠졌습니다. LSTM은 general spike에서 오히려 HPA보다 32초 늦게 시작했습니다.
+- **리드 타임은 이벤트당 추가 개수를 따라갑니다.** GRU의 리드 타임이 HPA보다 0.2~0.5초 긴 것은 한 번에 2배 이상 늘리기 때문이며(4.1절), 확장 시작은 GRU가 모든 시나리오에서 먼저였습니다.
+
+### 5.2 진행 중 발생한 문제와 조치
+
+- 1단계 중 실험용 PC가 절전으로 들어가 WSL이 종료되어 GRU ramp run 106이 끊겼습니다. 해당 run만 다시 실행한 뒤 클러스터를 삭제했고, 이후에는 절전 방지와 세션 분리 실행(`setsid`)을 적용했습니다.
+- 2단계 중 PC가 재부팅되어 Ensemble ramp run 106이 끊겼습니다. 같은 방식으로 이 run만 다시 실행했습니다. 두 재실행 run은 `podlog/`에 기록되지 않았습니다.
+- HPA·GRU(1단계)와 LSTM·Ensemble(2단계)은 같은 사양으로 다시 만든 클러스터에서 날짜를 달리해 측정했습니다. 단계 안에서는 교대 실행했지만, 단계 사이 비교에는 이 차이가 포함됩니다.
+
+---
+
+## 6. 재현 방법
 
 ```bash
 # 1) 수치 검증 (클러스터 불필요)
@@ -238,9 +276,17 @@ bash verification/run_scripts/run_repro2.sh <ngrok-url>   # 2차: 서버 재시�
 bash verification/run_scripts/run_repro3.sh <ngrok-url>   # 3차: 재시작 유무 비교
 bash verification/run_scripts/run_repro4.sh <ngrok-url>   # 4차: 1차 절차 재현 + 파드 기록
 python verification/analyze_round4.py                     # 4차 분석 (파드 기록 기준 리드 타임 포함)
+
+# 5) 확장 실험 (작업 폴더 ~/repro_gke2, 단계마다 클러스터 새로 생성)
+bash verification/run_scripts/run_ext1.sh <ngrok-url>     # 1단계: HPA·GRU × 3개 시나리오 × 6회
+bash verification/run_scripts/run_ext2.sh <ngrok-url>     # 2단계: LSTM·Ensemble × 3개 시나리오 × 6회
+python verification/analyze_ext2.py                       # 4개 스케일러 비교 (확장 시작 · P95 · 리드 타임 등)
+
+# 6) 논문 Fig 1 (전체 구조도) 다시 그리기
+python verification/make_fig1.py fig1.png
 ```
 
-## 6. 파일
+## 7. 파일
 
 | 경로 | 내용 |
 |---|---|
@@ -249,5 +295,8 @@ python verification/analyze_round4.py                     # 4차 분석 (파드 
 | `verification/gke_repro/` | GKE 재실험 원시 데이터 (lead_time CSV, Locust stats CSV) — 지연 구간 run 포함 전부 보존 |
 | `verification/gke_repro2/`, `gke_repro3/`, `gke_repro4/` | 후속 재실험 2~4차 원시 데이터. 4차는 `podlog/`(파드 상태 ms 기록·노드 CPU) 포함. `ai_logs/`는 추론 서버 로그(외부 IP는 `<client>`로 가림) |
 | `verification/analyze_round4.py` | 4차 분석: 측정 도구 기준 vs 파드 기록 기준 리드 타임, 노드 CPU |
-| `verification/run_scripts/` | 재실험 실행 스크립트(1~4차), 진행 대시보드 |
+| `verification/gke_ext1/`, `gke_ext2/` | 확장 실험 원시 데이터 (1단계 HPA·GRU, 2단계 LSTM·Ensemble). `week8/`은 Locust stats, `podlog/`는 파드 상태 기록, `ai_logs/`는 추론 서버 로그(외부 IP 가림) |
+| `verification/analyze_ext2.py`, `analyze_ext2_output.txt` | 확장 실험 분석: 4개 스케일러 × 6개 지표, Welch t-검정 |
+| `verification/make_fig1.py` | 논문 Fig 1 구조도 (코드 기준 구성: Locust·추론 서버·측정 도구는 실험용 PC, Prometheus는 모니터링 전용) |
+| `verification/run_scripts/` | 재실험 실행 스크립트(1~4차, 확장 1·2단계), 진행 대시보드 |
 | `scripts/gke_start.sh`, `scripts/gke_stop.sh` | GKE 클러스터 생성·삭제 |

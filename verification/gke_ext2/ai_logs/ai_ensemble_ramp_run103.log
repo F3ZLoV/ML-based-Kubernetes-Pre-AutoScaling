@@ -1,0 +1,338 @@
+🚀 [System] ENSEMBLE 모델 로딩 중...
+/mnt/d/ml-autoscaling-project/venv/lib/python3.12/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator MinMaxScaler from version 1.6.1 when using version 1.7.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+✅ [System] ensemble 로딩 완료!
+INFO:     Started server process [230060]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5005 (Press CTRL+C to quit)
+INFO:     <client> - "GET /metrics HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:1명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:1명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:1명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:1명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:1명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:1명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:4명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:16명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:26명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:26명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:36명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:46명 | 필요파드: 3개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:58명 | 필요파드: 4개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:58명 | 필요파드: 5개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:68명 | 필요파드: 6개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:80명 | 필요파드: 8개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:90명 | 필요파드: 12개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:90명 | 필요파드: 14개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:100명 | 필요파드: 15개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:110명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:122명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:122명 | 필요파드: 14개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:132명 | 필요파드: 17개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:144명 | 필요파드: 21개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:154명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:154명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:164명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:176명 | 필요파드: 23개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:186명 | 필요파드: 24개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:186명 | 필요파드: 22개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:196명 | 필요파드: 21개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:208명 | 필요파드: 17개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:218명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:218명 | 필요파드: 23개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:228명 | 필요파드: 12개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:240명 | 필요파드: 12개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:250명 | 필요파드: 22개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:250명 | 필요파드: 12개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:260명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:272명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:282명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:286명 | 필요파드: 14개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:292명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:302명 | 필요파드: 15개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:312명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:318명 | 필요파드: 15개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:324명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:334명 | 필요파드: 16개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:346명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:350명 | 필요파드: 17개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:356명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:366명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:378명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:382명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:388명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:398명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:406명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:412명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:416명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:426명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:436명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:442명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:448명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:458명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:470명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:477명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:481명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:491명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:503명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:509명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:513명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:523명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:533명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:539명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:539명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:553명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:563명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:569명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:569명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:583명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:593명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:559명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:509명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:509명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:459명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:409명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:358명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:358명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:298명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:248명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:198명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:198명 | 필요파드: 9개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:148명 | 필요파드: 7개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:88명 | 필요파드: 4개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:37명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:37명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [ENSEMBLE] 유저:10명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [230060]

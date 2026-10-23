@@ -13,7 +13,7 @@ venv/
 
 # Raw experiment output (large / superseded).
 # The 84 runs reported in the paper live in results/paper_dataset/ and are tracked,
-# as do the GKE reverse-verification runs in verification/gke_repro*/.
+# as do the GKE reverse-verification runs in verification/gke_repro*/ and gke_ext*/.
 *.csv
 !results/.gitkeep
 !results/paper_dataset/**
@@ -21,6 +21,8 @@ venv/
 !verification/gke_repro2/**
 !verification/gke_repro3/**
 !verification/gke_repro4/**
+!verification/gke_ext1/**
+!verification/gke_ext2/**
 logs/
 *.zip
 results/run-zip-files/

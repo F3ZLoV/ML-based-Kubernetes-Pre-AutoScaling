@@ -1,0 +1,32 @@
+Method,Name,Error,Occurrences
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e41800e0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e61e1f40>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e61651f0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,RemoteDisconnected('Remote end closed connection without response'),3
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e41b94c0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectionRefusedError(111, 'Connection refused')",473
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e61b1bb0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e5f91460>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e4220b90>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e6167110>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e5f72db0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e61b2780>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e77de1e0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectionResetError(104, 'Connection reset by peer')",31
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e61e1d30>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e61b0320>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e6184230>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e7ba05f0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e6203170>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e6184800>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e41bb1d0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e6167c20>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e61b0ec0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e7ba1580>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e61859d0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e41e27e0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e61853a0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e5f938c0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e6203770>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e61e39b0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x74c5e61661b0>, 'Connection to <lb> timed out. (connect timeout=None)')",1

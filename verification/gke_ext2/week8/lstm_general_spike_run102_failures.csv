@@ -1,0 +1,7 @@
+Method,Name,Error,Occurrences
+GET,/,RemoteDisconnected('Remote end closed connection without response'),1
+GET,/,"ConnectionRefusedError(111, 'Connection refused')",37
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x7d7662ec6330>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x7d76631c4440>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectionResetError(104, 'Connection reset by peer')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x7d76631c5610>, 'Connection to <lb> timed out. (connect timeout=None)')",1

@@ -1,0 +1,410 @@
+🚀 [System] GRU 모델 로딩 중...
+/mnt/d/ml-autoscaling-project/venv/lib/python3.12/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator MinMaxScaler from version 1.6.1 when using version 1.7.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+✅ [System] gru 로딩 완료!
+INFO:     Started server process [321531]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5005 (Press CTRL+C to quit)
+INFO:     <client> - "GET /metrics HTTP/1.1" 200 OK
+📊 [GRU] 유저:1명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:1명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:1명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:2명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:12명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:12명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:22명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:32명 | 필요파드: 7개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:42명 | 필요파드: 7개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:42명 | 필요파드: 7개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:52명 | 필요파드: 6개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:62명 | 필요파드: 6개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:72명 | 필요파드: 7개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:72명 | 필요파드: 7개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:82명 | 필요파드: 8개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:92명 | 필요파드: 9개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:102명 | 필요파드: 11개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:102명 | 필요파드: 11개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:112명 | 필요파드: 12개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:122명 | 필요파드: 14개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:132명 | 필요파드: 16개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:132명 | 필요파드: 17개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:142명 | 필요파드: 18개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:152명 | 필요파드: 20개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:162명 | 필요파드: 22개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:162명 | 필요파드: 23개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:172명 | 필요파드: 24개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:182명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:192명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:192명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:202명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:212명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:222명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:222명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:232명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:242명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:252명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:252명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:262명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:272명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:282명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:282명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:292명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:302명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:312명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:312명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:322명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:332명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:342명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:342명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:352명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:362명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:372명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:376명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:382명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:393명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:403명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:407명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:413명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:423명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:433명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:437명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:443명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:453명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:463명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:467명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:473명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:483명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:493명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:497명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:504명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:512명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:522명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:528명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:532명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:542명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:552명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:558명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:558명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:573명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:583명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:590명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:590명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:587명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:536명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:485명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:485명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:434명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:384명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:334명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:334명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:284명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:234명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:183명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:183명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:133명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:83명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:33명 | 필요파드: 18개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:33명 | 필요파드: 16개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 14개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [GRU] 유저:10명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [321531]

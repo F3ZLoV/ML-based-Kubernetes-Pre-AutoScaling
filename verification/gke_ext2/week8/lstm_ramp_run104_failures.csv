@@ -1,0 +1,6 @@
+Method,Name,Error,Occurrences
+GET,/,RemoteDisconnected('Remote end closed connection without response'),1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x72fcb0a74470>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectionRefusedError(111, 'Connection refused')",17
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x72fcb0de1b20>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x72fcb0df4560>, 'Connection to <lb> timed out. (connect timeout=None)')",1

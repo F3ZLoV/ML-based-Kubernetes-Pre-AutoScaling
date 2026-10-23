@@ -1,0 +1,4 @@
+Method,Name,Error,Occurrences
+GET,/,RemoteDisconnected('Remote end closed connection without response'),5
+GET,/,"ConnectionRefusedError(111, 'Connection refused')",160
+GET,/,"ConnectionResetError(104, 'Connection reset by peer')",5

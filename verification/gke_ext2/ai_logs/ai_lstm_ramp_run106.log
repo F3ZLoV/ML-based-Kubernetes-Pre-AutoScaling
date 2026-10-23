@@ -1,0 +1,266 @@
+🚀 [System] LSTM 모델 로딩 중...
+/mnt/d/ml-autoscaling-project/venv/lib/python3.12/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator MinMaxScaler from version 1.6.1 when using version 1.7.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+✅ [System] lstm 로딩 완료!
+INFO:     Started server process [445193]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5005 (Press CTRL+C to quit)
+INFO:     <client> - "GET /metrics HTTP/1.1" 200 OK
+📊 [LSTM] 유저:1명 | 필요파드: 2개
+📊 [LSTM] 유저:1명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:1명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:1명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:2명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:2명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:14명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:24명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:34명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:34명 | 필요파드: 1개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:46명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:56명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:66명 | 필요파드: 3개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:66명 | 필요파드: 3개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:76명 | 필요파드: 4개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:88명 | 필요파드: 6개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:98명 | 필요파드: 8개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:98명 | 필요파드: 9개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:110명 | 필요파드: 10개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:120명 | 필요파드: 11개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:130명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:130명 | 필요파드: 14개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:140명 | 필요파드: 17개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:150명 | 필요파드: 21개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:162명 | 필요파드: 22개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:162명 | 필요파드: 20개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:172명 | 필요파드: 18개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:182명 | 필요파드: 18개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:194명 | 필요파드: 22개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:194명 | 필요파드: 24개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:204명 | 필요파드: 20개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:214명 | 필요파드: 15개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:224명 | 필요파드: 14개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:224명 | 필요파드: 16개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:234명 | 필요파드: 19개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:244명 | 필요파드: 23개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:254명 | 필요파드: 19개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:254명 | 필요파드: 12개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:264명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:276명 | 필요파드: 13개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:286명 | 필요파드: 14개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:286명 | 필요파드: 14개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:296명 | 필요파드: 14개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:306명 | 필요파드: 15개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:316명 | 필요파드: 15개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:316명 | 필요파드: 15개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:326명 | 필요파드: 16개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:339명 | 필요파드: 16개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:349명 | 필요파드: 17개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:349명 | 필요파드: 17개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:359명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:371명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:381명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:381명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:391명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:401명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:411명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:411명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:421명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:431명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:443명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:443명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:453명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:465명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:475명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:475명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:485명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:495명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:505명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:512명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:518명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:528명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:538명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:544명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:544명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:560명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:570명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:574명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:581명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:591명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:600명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:579명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:519명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:478명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:478명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:417명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:367명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:317명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:317명 | 필요파드: 15개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:257명 | 필요파드: 12개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:207명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:156명 | 필요파드: 7개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:156명 | 필요파드: 7개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:96명 | 필요파드: 4개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:46명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:46명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:46명 | 필요파드: 25개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+📊 [LSTM] 유저:46명 | 필요파드: 2개
+INFO:     <client> - "GET /api/v1/predict HTTP/1.1" 200 OK
+INFO:     Shutting down

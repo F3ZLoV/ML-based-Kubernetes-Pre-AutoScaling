@@ -1,0 +1,4 @@
+Method,Name,Error,Occurrences
+GET,/,"ConnectionRefusedError(111, 'Connection refused')",161
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x7c11fa66c6e0>, 'Connection to <lb> timed out. (connect timeout=None)')",1
+GET,/,"ConnectionResetError(104, 'Connection reset by peer')",1

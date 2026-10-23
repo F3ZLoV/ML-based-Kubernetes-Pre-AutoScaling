@@ -1,0 +1,3 @@
+Method,Name,Error,Occurrences
+GET,/,"ConnectionRefusedError(111, 'Connection refused')",80
+GET,/,"ConnectTimeoutError(<HTTPConnection(host='<lb>', port=80) at 0x7cb7c8629fd0>, 'Connection to <lb> timed out. (connect timeout=None)')",1

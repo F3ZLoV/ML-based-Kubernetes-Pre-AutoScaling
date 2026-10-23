@@ -1,0 +1,3 @@
+timestamp,model,scenario,run,event_type,from_replicas,to_replicas,lead_time_sec
+2026-10-13T13:04:17.567627,ensemble,general_spike,102,scale_out,2,4,2.131
+2026-10-13T13:05:07.351534,ensemble,general_spike,102,scale_out,4,25,5.020
